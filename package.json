@@ -2,7 +2,6 @@
   "name": "testimonial-card",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://paul-alekseev.github.io/testimonial-card",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
