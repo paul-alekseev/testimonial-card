@@ -16,7 +16,7 @@ export const Card: FC<CardProps> = ({
   text,
 }) => {
   return (
-    <article className="card">
+    <article className="card p-6 rounded-lg">
       <header className="author-info">
         <img src={image} alt={`${authorName}'s avatar`} />
         <figcaption className="author-names">
