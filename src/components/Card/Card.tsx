@@ -16,19 +16,21 @@ export const Card: FC<CardProps> = ({
   text,
 }) => {
   return (
-    <div className="card">
-      <div className="author-info">
-        <img src={image} alt="Author" />
-        <div className="author-names">
-          <p className="name text-lg font-semibold text-primary truncate">
+    <article className="card">
+      <header className="author-info">
+        <img src={image} alt={`${authorName}'s avatar`} />
+        <figcaption className="author-names">
+          <h3 className="name text-lg font-semibold text-primary truncate">
             {authorName}
-          </p>
+          </h3>
           <p className="nickname text-sm text-secondary truncate">
             {authorNickname}
           </p>
-        </div>
-      </div>
-      <p className="text text-base text-secondary">{text}</p>
-    </div>
+        </figcaption>
+      </header>
+      <blockquote>
+        <p className="text-base text-secondary">{text}</p>
+      </blockquote>
+    </article>
   );
 };
